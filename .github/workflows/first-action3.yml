@@ -1,10 +1,14 @@
-name: First workflow2
+name: First workflow3
 on: push
 jobs:
-  first-job2:
+  first-job3:
     runs-on: ubuntu-latest
     steps:
       - name: github checkout
         uses: actions/checkout@v4
       - name: List files in the repository
         run: ls ${{ github.workspace }}
+      - name: install nodejs
+        uses: actions/setup-node@v4
+	with:
+            node-version: "20"

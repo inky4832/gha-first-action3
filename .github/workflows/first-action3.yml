@@ -4,4 +4,5 @@ jobs:
   first-job3:
     runs-on: ubuntu-latest
     steps:
-	- run: echo " The ${{ github.repository }} repository has been cloned to the runner."
+	- name: print
+	  run: echo Hello

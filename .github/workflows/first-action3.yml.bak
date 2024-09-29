@@ -1,8 +1,10 @@
-name: First workflow3
+name: First workflow2
 on: push
 jobs:
-  first-job3:
+  first-job2:
     runs-on: ubuntu-latest
     steps:
-	- name: print
-	  run: echo Hello
+      - name: github checkout
+        uses: actions/checkout@v4
+      - name: Run a one-line script
+        run: echo " The ${{ github.repository }} repository has been cloned to the runner."

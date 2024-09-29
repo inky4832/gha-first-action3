@@ -9,10 +9,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
       - name: install nodejs
         uses: actions/setup-node@v4
 	with:
-            node-version: "20"
+            node-version: '20'
       - name: install dependencies
         run: npm install
 

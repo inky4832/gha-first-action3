@@ -9,12 +9,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: install nodejs
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
         uses: actions/setup-node@v4
-	with:
-          node-version: "20"
-      - name: install dependencies
-        run: npm install
+        with:
+          node-version: '20'
 
       - name: Run a one-line script
         run: echo " The ${{ github.repository }} repository has been cloned to the runner."

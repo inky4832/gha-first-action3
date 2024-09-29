@@ -8,8 +8,8 @@ jobs:
         uses: actions/checkout@v4
       - name: install nodejs
         uses: actions/setup-node@v4
-	  with:
-            node-version: 20
+	with:
+            node-version: "20"
       - name: install dependencies
         run: npm install
       - name: List files in the repository

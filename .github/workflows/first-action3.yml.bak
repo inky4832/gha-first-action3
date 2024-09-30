@@ -18,7 +18,7 @@ jobs:
           node-version: 18
 
       - name: install dependencies
-        run: npm install axios
+        run: npm ci
 
       - name: Run a one-line script
         run: echo " The ${{ github.repository }} repository has been cloned to the runner."
